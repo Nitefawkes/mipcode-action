@@ -20,7 +20,7 @@ jobs:
         with:
           fetch-depth: 0
           persist-credentials: false
-      - uses: Nitefawkes/mipcode-action@d46e67f252a0ae36ddd4a81ec8c7f281c8891a00
+      - uses: Nitefawkes/mipcode-action@2bad8f198f79f7f79f6e2f37e48fb5ca1849b487
 ```
 
 The standard PR checkout compares the merged tree with the base commit from the event. If your workflow checks out the contributor's exact PR head instead, the Action compares it with the common ancestor of the two branches. Missing comparison history or a checkout that belongs to a different PR causes the check to fail.
@@ -31,6 +31,6 @@ The standard PR checkout compares the merged tree with the base commit from the 
 | `base-ref` | Automatic on pull requests | Supply a locally available Git commit or ref to override the comparison. Required for other events. |
 | `fail-on-findings` | `false` | Warnings leave the job green. Set to `'true'` to make findings fail the job. Setup and analysis errors fail in either mode. |
 
-This wrapper runs the static Python delta check from `coherion-mipcode==0.6.4`. It installs the hash-verified wheel from PyPI in a temporary environment. The workflow needs Git history, access to PyPI, and read access to the checked-out repository. It requires no model credentials.
+This wrapper runs the static Python delta check from `coherion-mipcode==0.6.5`. It installs the hash-verified wheel from PyPI in a temporary environment. The workflow needs Git history, access to PyPI, and read access to the checked-out repository. It requires no model credentials.
 
-[MipCode overview](https://coherion.net/mipcode) · [Public finding ledger](https://coherion.net/mipcode/ledger) · [Analyzer source](https://github.com/Nitefawkes/mipcode) · [PyPI release](https://pypi.org/project/coherion-mipcode/0.6.4/)
+[MipCode overview](https://coherion.net/mipcode) · [Public finding ledger](https://coherion.net/mipcode/ledger) · [Analyzer source](https://github.com/Nitefawkes/mipcode) · [PyPI release](https://pypi.org/project/coherion-mipcode/0.6.5/)
