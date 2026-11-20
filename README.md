@@ -20,7 +20,7 @@ jobs:
         with:
           fetch-depth: 0
           persist-credentials: false
-      - uses: Nitefawkes/mipcode-action@2bad8f198f79f7f79f6e2f37e48fb5ca1849b487
+      - uses: Nitefawkes/mipcode-action@fe72dc8f7ab4cb55375e268a36b0c36836b5770f # v1.0.1
 ```
 
 The standard PR checkout compares the merged tree with the base commit from the event. If your workflow checks out the contributor's exact PR head instead, the Action compares it with the common ancestor of the two branches. Missing comparison history or a checkout that belongs to a different PR causes the check to fail.
