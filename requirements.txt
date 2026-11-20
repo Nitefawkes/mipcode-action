@@ -1,1 +1,1 @@
-coherion-mipcode==0.6.4 --hash=sha256:57f2a648df4c22f0734ee7ae738af975428ecc68b73504f89857037322fcb239
+coherion-mipcode==0.6.5 --hash=sha256:2465cbe4c54e61bb15b89810d623ab3cf74df71da79423c92ef9c7f67cbbbc65
